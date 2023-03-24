@@ -1,0 +1,54 @@
+{
+  "name": "lh-video-h265",
+  "version": "1.0.8",
+  "description": "Video.js' Tech for FLV+H.265/H.264",
+  "author": "coffe1891 <kai.ma@163.com>",
+  "license": "GPL",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:LHTANYAN/lh-video-h265.git"
+  },
+  "main": "dist/lh-video-h265.js",
+  "files": [
+    "README.md",
+    "dist/",
+    "index.html"
+  ],
+  "scripts": {
+    "serve": "webpack-dev-server --open --config webpack.config.js",
+    "prebuild": "rimraf dist",
+    "build": "npm-run-all -p build:*",
+    "build:dev": "webpack --config scripts/build.dev.js --progress --colors",
+    "build:pro": "rimraf dist && webpack --config scripts/build.pro.js --progress --colors"
+  },
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  },
+  "keywords": [
+    "lh-video-h265",
+    "react",
+    "videojs",
+    "videojs-tech",
+    "h265",
+    "h264",
+    "flv",
+    "playback"
+  ],
+  "dependencies": {
+    "video.js": "^7",
+    "wx-inline-player-new": "^1.0.9"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0",
+    "babel-loader": "^8.1.0",
+    "copy-webpack-plugin": "^6.0.3",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "typescript": "3.9.7"
+  }
+}
