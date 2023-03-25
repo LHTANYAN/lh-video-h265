@@ -1,4 +1,4 @@
-import videojs from  '../dist/videojs-flvh265.min.js';
+import videojs from  'react-video-h265';
 
 (() => {
 	let num = 9;

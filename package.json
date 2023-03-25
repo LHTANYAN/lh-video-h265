@@ -1,8 +1,8 @@
 {
-  "name": "lh-video-h265",
-  "version": "1.0.8",
+  "name": "react-video-h265",
+  "version": "1.0.10",
   "description": "Video.js' Tech for FLV+H.265/H.264",
-  "author": "coffe1891 <kai.ma@163.com>",
+  "author": "18804637910@163.com",
   "license": "GPL",
   "repository": {
     "type": "git",
@@ -49,6 +49,7 @@
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",
-    "typescript": "3.9.7"
+    "typescript": "3.9.7",
+    "react-video-h265": "^1.0.10"
   }
 }

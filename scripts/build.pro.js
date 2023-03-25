@@ -9,7 +9,7 @@ module.exports = {
 	},
 	output: {
 		library: 'Flvh265',
-		filename: 'lh-video-h265.min.js',
+		filename: 'lh-video-h265.js',
 		libraryTarget: "umd",
 		path: path.join(__dirname, '../dist'),
 		libraryExport: "default",
